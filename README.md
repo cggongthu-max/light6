@@ -11,3 +11,7 @@
 [**`正定.html`**](论语.html) Recordings of the Histories.
 
 [**`大学.html`**](大学.html) Sakura's Great Learnings 대학.
+
+[**`bib孟子.html`**](bib孟子.html) Sakura's Mencius Readings.
+
+[**`suan.html`**](suan.html) Sakura's Sutra of Computation.
