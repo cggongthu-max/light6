@@ -14,4 +14,6 @@
 
 [**`bib孟子.html`**](bib孟子.html) Sakura's Mencius Readings.
 
+[**`bib姚先生.html`**](bib姚先生.html) Mr. Yao Teachings.
+
 [**`suan.html`**](suan.html) Sakura's Sutra of Computation.
