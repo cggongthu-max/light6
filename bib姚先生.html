@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 26.8.1.1 (MacOSX)"/>
 	<meta name="created" content="2026-10-01T19:23:33.818767692"/>
-	<meta name="changed" content="2026-11-01T22:59:24.789913000"/>
+	<meta name="changed" content="2026-11-03T22:22:48.698745000"/>
 	<style type="text/css">
 		@page { size: 21cm 29.7cm; margin: 2cm }
 		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
@@ -71,6 +71,66 @@ B </span></font></font><font face="Liberation Serif, serif"><font size="4" style
 怕被时代抛弃、怕年轻人不听自己的；防止之法是快速学习和成长：“有些人没老，但他已经登了；有些人老了，但他却不登。”</font></font></p>
 <p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">一句话总结：作者认为性格是被环境与善良之人塑造、又需靠原则与自省不断校准的产物
 ——不改变底色去做主执行官，让组织去适应自己的性格；同时警惕自我、认可饥渴与不安全感，用持续快速成长保持初心。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p align="center" style="line-height: 200%; margin-bottom: 0cm; page-break-before: always">
+<font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">埃尔德斯平面单位距离问题：来龙去脉</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Note:
+This article is Work In Progress.</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">一、问题是什么</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">u(n)</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：平面上
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点中，距离恰好为
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的点对最多能有多少个？</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">等价问题：</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点中，出现次数最多的那个距离，最多能重复出现多少次？</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">图论语言下，即问
+“单位距离图”（顶点为点、边为单位距离对）最多能有多少条边。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">直线上放
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点：只有
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">n−1
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">条单位距离；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">正方形网格：约
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">条（横向
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">+
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">纵向相邻）；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">正六边形加中心（</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">7
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点）：</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">12
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">条
+—— 单位距离图可以远比平面图稠密（平面图至多
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">3n−6
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">条边）。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">二、起源：埃尔德斯，</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1946</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1946
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">年，保罗‧埃尔德斯在《关于</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">点的距离集合》中提供了二个孪生问题：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">问题</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">内容</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">命运</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">不同距离问题</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点最少能确定多少个不同距离
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">g
+(n)</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">？</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	2010
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">年被
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Guth–Katz
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">基本解决（≥
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">cn/log
+n</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">单位距离问题</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	n
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个点中某个距离最多重复多少次
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">u
+(n)</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">？</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">	</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">近
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">80
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">年悬而未决，</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2025
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">年才被推翻主流猜想</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">埃尔德斯立即给出了两个基本界，并悬赏
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">500
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">美元。《研究问题在离散几何》</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">(2005)
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">称它
+“可能是组合几何中最著名（也最容易解释）的问题”。</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Noga
+Alon </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">说这是
+“埃尔德斯最钟爱的问题之一”，他本人在报告中多次听到埃尔德斯提起它。</font></font></p>
 <p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
 
 </p>
