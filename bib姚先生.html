@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 26.8.1.1 (MacOSX)"/>
 	<meta name="created" content="2026-10-01T19:23:33.818767692"/>
-	<meta name="changed" content="2026-11-03T23:27:21.862981000"/>
+	<meta name="changed" content="2026-11-05T09:18:41.323982000"/>
 	<style type="text/css">
 		@page { size: 21cm 29.7cm; margin: 2cm }
 		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
@@ -128,6 +128,97 @@ n</span></font></font><font face="Liberation Serif, serif"><font size="4" style=
 “可能是组合几何中最著名（也最容易解释）的问题”。</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Noga
 Alon </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">说这是
 “埃尔德斯最钟爱的问题之一”，他本人在报告中多次听到埃尔德斯提起它。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p align="center" style="line-height: 200%; margin-bottom: 0cm; page-break-before: always">
+<font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">姚的百万富翁问题</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">姚的百万富翁问题由著名计算学家姚期智於</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1982</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">年之论文《安全计算协议》中首次提出。它是安全多方计算领域的开山之作，也是密码学历史上最著名的思想实验之一。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">问题描述</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">两位百万富翁阿里斯和波布在酒会上相遇，他们想知道谁更有钱，但双方都不希望泄露自己具体的财富数额。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">阿里斯的财富为
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">a</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，波布的财富为
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">b</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">目标：比较
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">a
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">和
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">b
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的大小</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">约束：双方只能得知比较结果（如
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">a
+&gt; b</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">），不能知道对方的真实数值</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">一个经典解决方案思路（基于
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">RSA</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">假设
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">a</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">、</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">b
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">都是介于
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">到
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">100
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">之间的整数（单位：百万）：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Bob
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">生成
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">RSA
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">密钥对，把公钥
+发给 </font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Alice</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Alice
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">选一个随机数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">x</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，计算
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">k
+= x^e mod n</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，然后把
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">k
+− a </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">发给
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Bob</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Bob
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">对序列
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">(k
+− a + 1), (k − a + 2), …, (k − a + N) </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">逐个用私钥
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">d
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">解密，再选一个大素数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">p</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，把所有结果模
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">p
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">后连同
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">p
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">一起发给
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Alice</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Alice
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">检查自己随机数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">x
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">对应的位置是否出现在序列中，从而判断出
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">a
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">与
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">b
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的大小关系</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">由于加了随机数和模运算，</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Bob
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">看到的只是乱码般的数字，</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Alice
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">也无法反推出
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">b
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的具体值。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">此外，姚期智还提出了混淆电路技术，可将任意函数
+“加密” 后交由对方计算，这是更通用的解决方案。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">意义</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">证明了互不信任的双方可以在不泄露各自隐私的前提下完成联合计算</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">奠定了安全多方计算、隐私保护计算的理论基础</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">其思想如今广泛应用于隐私保护的数据比较、联合风控、隐私求交（</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">PSI</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）、拍卖和电子投票等场景</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm; page-break-before: always">
+<font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">为什么以前那种人品好，有学问，敢于为老百姓发声的知识分子现在看不到了？</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">有啊，清华姚班校友毕克先生由于不满于替洋人在股市宰割华人，愤然辞去简街的优渥工作，转从公益事业，於北京公安局不愿解决的北大附中校园霸凌事件中出手相助。下面是受害母亲信件截取。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">首先，怀着万分感激与敬意，衷心感谢您在百忙之中关注北大附中石景山校区的霸凌事件。您的回应，是黑暗中照进我们家庭的第一束强光，让久陷绝望的我们重新触摸到“希望”的温度。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">自您的信函转发至北大校方及辖区派出所已逾多日，遗憾的是，我们仍未收到任何实质性回应——既无校方对霸凌事件的调查承诺，也无职能部门的介入表态。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">此前，我们做过所有努力：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1.</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">与北大协商：多次主动沟通，却换来“流程化回应”，从未见到校方对霸凌的严肃反思与整改动作；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2.</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">多次报警求助：派出所记录在案，却因“校园纠纷定性模糊”“证据链需校方配合”等理由明，</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">直到您指出
+“北大附中石景山校区党建工作不到位”
+的核心问题，我们才恍然大悟：党建引领校园治理，若党建虚化，校园管理的疏漏必然导致灰色土壤——从对学生思想教育的忽视，到教师责任体系的松散，再到校园矛盾处置的低效，根源都与“党建赋能不足”息息相关。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">恳请：以清华担当，破困局坚冰</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">您在信函中提出“从清华大学、人大附中寻求党建帮扶”的建议，我们深信这是破局的关键——党建强，则管理硬；管理硬，则校园安。因此，我们斗胆向您提出更具体的恳请：党建帮扶落地：期待清华、人大附中等单位的党支部，以“党建共建”为契机，为北大附中石景山校区输入成熟的
+“党建</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">校园治理”经验（如党员教师带头的“校园安全网格机制”“学生心理疏导体系”等），从根源上铲除霸凌生存土壤；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">恳切期盼您的支持与推动，让每一个孩子都能在红旗下安心成长。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">再次向您致以最诚挚的谢意！</font></font></p>
 <p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
 
 </p>
