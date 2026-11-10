@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 26.8.1.1 (MacOSX)"/>
 	<meta name="created" content="2026-10-01T19:23:33.818767692"/>
-	<meta name="changed" content="2026-11-06T17:54:43.674768000"/>
+	<meta name="changed" content="2026-11-09T22:18:53.659320000"/>
 	<style type="text/css">
 		@page { size: 21cm 29.7cm; margin: 2cm }
 		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
@@ -45,6 +45,161 @@
 <p align="center" style="line-height: 200%; margin-bottom: 0cm; page-break-before: always">
 <font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">3</span></font></font></p>
 <p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">他一看到那位天使的样子，就顿时意识到那位天使竟然正是自己的女儿。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p align="center" style="line-height: 200%; margin-bottom: 0cm; page-break-before: always">
+<font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">双色最大内积问题近似与精确的难度（陈立杰，</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2018</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">麻工院）</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">（</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">arXiv:1802.02325</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Max-IP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">问题定义：给定两个由
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">个向量组成的集合
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$A,
+B$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">（向量来自
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\{0,1\}^d$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">），找到一对
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$a
+\in A, b \in B$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，使得内积
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$a
+\cdot b$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">最大。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">该问题非常重要，因为它是：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">相似搜索领域的核心问题；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+[Abboud et al., FOCS 2017] </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">关于多项式时间问题近似难度的突破性工作的</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">基础问题</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">计算几何中
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\ell_2$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">最远点对等问题的归约来源。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">已有暴力算法为
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$O(n^2
+\cdot d)$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间；在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">SETH
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">假设下，当
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$d
+= \omega(\log n)$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时不存在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-\Omega(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间的精确算法。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">三大主要结果</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">结果
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：乘法近似的完整刻画</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">SETH/OVC
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">假设下（设
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\omega(\log
+n) &lt; d &lt; n^{o(1)}$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">存在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-\Omega(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$t$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">乘法近似算法，当且仅当
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$t
+= (d/\log n)^{\Omega(1)}$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">。</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">上界</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：给出
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2+o(1)-\Omega(\varepsilon)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间的算法（其中
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\varepsilon
+= \min\{\frac{\log t}{\log(d/\log n)}, 1\}$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">下界</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：若存在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$(d/\log
+n)^{o(1)}$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">近似的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-\Omega(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">算法则推翻
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">SETH</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">下界直接源自
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Rubinstein</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">（</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">STOC
+2018</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）基于</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">代数几何码</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的新型
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">MA
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">通信协议。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">###
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">结果
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：加法近似的完整刻画</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">&gt;
+**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">存在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-\Omega(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$t$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">加法近似算法，当且仅当
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$t
+= \Omega(d)$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">。</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">上界算法通过</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">随机采样坐标</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">将问题归约到
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$d
+= O(\log n)$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">情形，再用已有方法求解；</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">下界由
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">[Rub18]
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">建立，本文贡献在于给出匹配的上界证明其紧性。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">结果
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">3</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：整数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Max-IP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$2^{O(\log^*
+n)}$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">维下的精确难度</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">&gt;
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">SETH
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">假设下，即使维度仅为
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$d
+= c \log^* n$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">（极慢增长函数），精确求解整数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Max-IP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">仍需
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-o(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">推论</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">（经
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">[Wil18]
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的归约）：</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">-
+$\ell_2$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">最远点对、双色
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\ell_2$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">最近点对问题在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$2^{O(\log^*
+n)}$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">维下同样需要
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$n^{2-o(1)}$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间——这与
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\ell_2$-</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">最近点对可在
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$2^{O(d)}
+\cdot n^{\log^{O(1)} n}$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">时间求解形成鲜明对比。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">额外的理论贡献</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">1.
+**NP·UPP </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">通信协议的联系</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：建立了整数
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Max-IP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">精确求解的条件下界与集合不相交性（</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Set-Disjointness</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">）的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">NP·UPP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">通信协议之间的联系（平行于近似
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Max-IP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">与
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">MA
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">协议的联系）；若某类
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">NP·UPP
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">协议可改进，将导出
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\omega(1)$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">维的硬度。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">2.
+**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">改进的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">MA
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">协议</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：给出集合不相交性和内积问题的新
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">MA
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">通信协议，通信复杂度
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$O(\sqrt{n
+\log n \log \log n})$</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">，改进了
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Aaronson–Wigderson
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$O(\sqrt{n}\log
+n)$ </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">界，逼近
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">Klauck
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">$\Omega(\sqrt{n})$
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">下界。</font></font></p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">3.
+**LCS-Closest-Pair </span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的改进不可近似性</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">**</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">：经
+</font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt"><span lang="en-US">[ARW17]
+</span></font></font><font face="Liberation Serif, serif"><font size="4" style="font-size: 14pt">的归约，得到该问题更精细的下界。</font></font></p>
 <p style="text-align: start; line-height: 200%; margin-bottom: 0cm"><br/>
 
 </p>
